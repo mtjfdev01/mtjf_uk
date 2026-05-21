@@ -9,7 +9,7 @@ const HomeInfoSection = () => {
     <section className="home-info-section">
       <div className="container">
         <div className="home-info-grid">
-          <LatestNewsCard />
+          {/* <LatestNewsCard /> */}
           <EventsCard />
           <SocialStreamCard />
         </div>

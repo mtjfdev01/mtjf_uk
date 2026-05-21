@@ -1,35 +1,4 @@
 // blogsData.js - Unified blog data for all components
-import ceo from '../assets/img/blogs/ceo.webp'
-import blog1 from '../assets/img/causes/poor boy.webp'
-import blog2 from '../assets/img/causes/meet box.webp'
-import heroBlogs from '../assets/img/blogs/hero_blogs.webp'
-import powerOfCleanWater from '../assets/img/blogs/power of clean water.webp'
-import poorMan from '../assets/img/blogs/poor man.webp'
-import poorChild from '../assets/img/blogs/poor child.webp'
-import imageBlog3 from '../assets/img/blogs/image blog 3.webp'
-import handpump from '../assets/img/blogs/handpump.webp'
-import bull from '../assets/img/blogs/bull.webp'
-import h_2 from '../assets/img/blogs/education.webp'
-import sadaqah_jariyah1 from '../assets/img/blogs_details/sadaqah_jariyah/sadaqah_jariyah1.webp'
-import sadaqah_jariyah2 from '../assets/img/blogs_details/sadaqah_jariyah/sadaqah_jariyah2.webp'
-import sadaqah_jariyah3 from '../assets/img/blogs_details/sadaqah_jariyah/sadaqah_jariyah3.webp'
-import sadaqah_jariyah4 from '../assets/img/blogs_details/sadaqah_jariyah/sadaqah_jariyah4.webp'
-import sadaqah_jariyah5 from '../assets/img/blogs_details/sadaqah_jariyah/sadaqah_jariyah5.webp'
-import clean_water1 from '../assets/img/blogs_details/clean_water/clean_water1.webp'
-import clean_water2 from '../assets/img/blogs_details/clean_water/clean_water2.webp'
-import marriage1 from '../assets/img/blogs_details/marriage/marriage1.webp'
-import marriage2 from '../assets/img/blogs_details/marriage/marriage2.webp'
-import marriage3 from '../assets/img/blogs_details/marriage/marriage3.webp'
-import education1 from '../assets/img/blogs_details/education/education1.webp'
-import education2 from '../assets/img/blogs_details/education/education2.webp'
-
-import hungry_home from '../assets/img/blogs_details/qurbani/hungry_home.jpeg'
-import qurbani_is from '../assets/img/blogs_details/qurbani/qurbani_is.jpeg'
-import right_qurbani from '../assets/img/blogs_details/qurbani/right_qurbani.jpeg'
-import this_eid from '../assets/img/blogs_details/qurbani/this_eid.jpeg'
-import cta_banner from '../assets/img/blogs_details/qurbani/cta_banner.jpeg'
-import qurbani from '../assets/img/blogs/qurbani.webp'
-import marriage from '../assets/img/blogs/marriage.webp'
 import h_3 from '../assets/img/projects/projects-details/Health/health_free_opd.webp'
 import h_4 from '../assets/img/projects/projects-details/Health/health_free_medicines.webp'
 import h_5 from '../assets/img/projects/projects-details/Health/health_free_medical_camps.webp'
@@ -46,7 +15,7 @@ export const blogs = [
     date:'May 13, 2026',
     title:'Qurbani Is More Than a Sacrifice: It’s a Lifeline for the Needy',
     category:`Qurbani`,
-    image: qurbani_is,
+    image: '',
     description:``,
     description2:'',
     bottomText:'',
@@ -116,8 +85,8 @@ they have access to meat, making the gesture not just symbolic but deeply impact
         services:[],
         afterServicesText:``,
         // image: cta_banner,
-        bottom_banner_img:cta_banner,
-        bottom_banner_mobile_img:cta_banner,
+        bottom_banner_img:'',
+        bottom_banner_mobile_img:'',
         donationUrl: '/donate/qurbani-baraye-mustehqeen',
       },
     ]
@@ -127,7 +96,7 @@ they have access to meat, making the gesture not just symbolic but deeply impact
     date:`May 13, 2026`,
     title:'From Your Qurbani to a Hungry Home: How One Sacrifice Feeds Many',
     category:`Qurbani`,
-    image: hungry_home,
+    image: '',
     description:``,
     description2:'',
     bottomText:'',
@@ -203,8 +172,8 @@ they have access to meat, making the gesture not just symbolic but deeply impact
        description2:`This dignity matters. Poverty already takes so much from people. Their comfort, their security, their choices. Qurbani, when done right, gives something bigger back: Respect.`,
        bottomText:``,
       //  image: qurbani,
-       bottom_banner_img:cta_banner,
-       bottom_banner_mobile_img:cta_banner,
+       bottom_banner_img:'',
+       bottom_banner_mobile_img:'',
        donationUrl: '/donate/qurbani-baraye-mustehqeen',
       },
         {
@@ -241,7 +210,7 @@ they have access to meat, making the gesture not just symbolic but deeply impact
     date:`May 13, 2026`,
     title:'Choosing the Right Qurbani: Why Trust, Transparency, and Amanah Matter',
     category:`Qurbani`,
-    image: right_qurbani,
+    image: '',
     description:``,
     description2:'',
     bottomText:'',
@@ -329,8 +298,8 @@ they have access to meat, making the gesture not just symbolic but deeply impact
        description3:`The right choice ensures that your worship is not only completed, but honored in the best possible way. It ensures that your intention is protected until it reaches the people who are waiting for it most.`,
        bottomText:``,
        // image: qurbani,
-       bottom_banner_img:cta_banner,
-       bottom_banner_mobile_img:cta_banner,
+       bottom_banner_img:'',
+       bottom_banner_mobile_img:'',
        donationUrl: '/donate/qurbani-baraye-mustehqeen',
       },
       {
@@ -358,7 +327,7 @@ they have access to meat, making the gesture not just symbolic but deeply impact
     date:`May 13, 2026`,
     title:'This Eid, Let Your Qurbani Change Lives Beyond the Ritual',
     category:`Qurbani`, 
-    image: this_eid,
+    image: '',
     description:``,
     description2:'',
     bottomText:'',
@@ -440,8 +409,8 @@ they have access to meat, making the gesture not just symbolic but deeply impact
        description3:`This is what it means for Qurbani to go beyond ritual. It becomes an act that changes the emotional reality of someone’s Eid.`,
        bottomText:``,
        // image: qurbani,
-       bottom_banner_img:cta_banner,
-       bottom_banner_mobile_img:cta_banner,
+       bottom_banner_img:'',
+       bottom_banner_mobile_img:'',
        donationUrl: '/donate/qurbani-baraye-mustehqeen',
       },
       {
@@ -473,7 +442,7 @@ they have access to meat, making the gesture not just symbolic but deeply impact
     date:'June 15, 2018',
     title:'Understanding Qurbani',
     category:'Qurbani',
-    image: qurbani,
+    image: '',
     description:``,
     description2:'',
     bottomText:'',
@@ -690,7 +659,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
     date: 'June 15, 2018',
     title: 'How sadqah Jariyah Creates Eternal Blessings for Generations',
     category: 'Sadqah',
-    image: poorMan,
+    image: '',
     excerpt: 'There are some acts of kindness so powerful that they don’t just help in the moment—they continue to bring blessings for generations to come. Sadaqah Jariyah is one of those rare, beautiful gifts that keeps giving, not just in this world but in the hereafter.',
     content: 'content',
     subProjects: [
@@ -698,7 +667,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
         id: 'what-is-sadaqah-jariyah',
         title: 'What is Sadaqah Jariyah?',
         // subtitle: 'When Illness Strikes, We Step In: Immediately',
-        image: sadaqah_jariyah1,
+        image: '',
         description: 'Sadaqah Jariyah, or ongoing charity, is a form of giving that continues to benefit people long after the giver has passed. Unlike one-time charity (Sadaqah), which provides immediate relief, Sadaqah Jariyah ensures continuous reward for as long as people benefit from it.',
         descriptionBold: null,
         description2Bold:'The Prophet Muhammad (ﷺ) said',
@@ -711,7 +680,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
         id: 'types-of-sadaqah-jariyah',
         title: 'Types of Sadaqah Jariyah',
         impact:'Sadaqah Jariyah can take many forms, each carrying its own ripple effect of blessings:',
-        image: sadaqah_jariyah2,
+        image: '',
         descriptionBold: 'Providing Clean Water – Installing hand pumps, wells, or water filtration plants.',
         description: 'The Prophet (ﷺ) was asked, “Which charity is best?” He replied, “(Providing) water.” (Abu Dawood 1681)',
         description2Bold: '',
@@ -735,7 +704,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
         id: 'Sponsoring-Orphans-Education',
         title: '',
         impact:'',
-        image: sadaqah_jariyah3,
+        image: '',
         descriptionBold: ' Sponsoring Orphans & Education – Providing for a child’s education and future',
         description: '“The best of you are those who learn the Quran and teach it.” (Bukhari)',
          description2Bold: '',
@@ -748,7 +717,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
         id: 'Supporting-Medical-Aid',
         title: '',
         impact:'',
-        image: sadaqah_jariyah4,
+        image: '',
         descriptionBold: 'Supporting Medical Aid – Funding hospitals, clinics, or treatments.',
         description: 'Helping the sick and needy ensures that lives are saved and communities remain healthy.Our Healthcare Initiative at MTJ Foundation provides medical aid, medicines, and healthcare support to underprivileged families, ensuring access to essential treatment.',
         description2Bold: '',
@@ -763,7 +732,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
         id: 'Planting-Trees',
         title: '',
         impact:'',
-        image: sadaqah_jariyah5,
+        image: '',
         descriptionBold: 'Planting Trees – A simple act that benefits generations',
         description: 'The Prophet (ﷺ) said, “If a Muslim plants a tree or sows seeds, and then birds, or a person, or an animal eats from it, it is regarded as charity for him.” (Bukhari)',
          description2Bold: '',
@@ -823,7 +792,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
     date: 'June 15, 2018',
     title: 'The Power of Clean Water',
     category: 'Water',
-    image: powerOfCleanWater,
+    image: '',
     excerpt: '',
     content: 'content',
     subProjects: 'subProjects',
@@ -835,7 +804,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
         id: 'The-Power-of-Clean-Water',
         title: 'The Power of Clean Water: Transforming Lives One Drop at a Time',
         // subtitle: 'When Illness Strikes, We Step In: Immediately',
-        image: clean_water1,
+        image: '',
         description: 'Water is life. It nourishes, cleanses, and sustains us. Yet, for millions across the world, access to clean drinking water is still a distant dream. Imagine a mother walking miles under the scorching sun, carrying a heavy container just to fetch water that may not even be safe to drink. Imagine a child, too weak to attend school, suffering from preventable waterborne diseases. This is not just a scenario—it is the reality of many communities in Pakistan and beyond.',
         description2:'At MTJ Foundation, we believe that access to clean water is not a privilege; it is a fundamental right. It is not just about quenching thirst—it is about dignity, health, and the chance for a better future. Our mission is to ensure that every drop of water brings hope, healing, and transformation.',
         bottomText:''  
@@ -874,7 +843,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
       {
         id:'impacting-lives-through-clean-water-access',
         title:'Impacting Lives Through Clean Water Access',
-        image: clean_water2,
+        image: '',
         description:'With the installation of our hand pumps and water filtration plants, we have impacted the lives of more than 300,000 people, bringing hope and ease to communities that once struggled for something as basic as water. Families no longer have to walk miles for water, a struggle we heard from countless beneficiaries. Mothers shared how they would set out before sunrise, walking for hours with heavy pots, only to return home exhausted, leaving little time for their children or household needs. Children, instead of attending school, would accompany their parents on these long, tiring journeys.',
         description2:'But now, with access to clean water just steps away, their lives have taken a new turn. Children can finally focus on their education without the burden of water collection. Mothers have more time to care for their families and pursue small income-generating activities. We have seen entire communities thrive, with gardens growing fresh vegetables and livestock staying healthy.',
         description3:'The risk of waterborne diseases, which once caused untold suffering, has significantly decreased. Villagers no longer live in fear of contaminated water harming their loved ones. Now, they celebrate healthier, brighter days. The ripple effect of clean water is profound—it’s not just about survival but about living with dignity and hope.',
@@ -912,7 +881,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
   date: 'June 15, 2018',
   title: 'The Significance of Marriage and the Growing Challenges Amidst Inflation',
   category: 'Marriage',
-  image: marriage,
+  image: '',
   excerpt: '',
   content: 'content',
   subProjects: 'subProjects',
@@ -921,7 +890,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
     {
     id:'Significance-of-Marriage',
     title:'The Significance of Marriage and the Growing Challenges Amidst Inflation',
-    image: marriage1,
+    image: '',
     description:'Marriage, an institution deeply rooted in tradition, culture, and faith, is more than just a social contract. It signifies the union of two souls, the foundation of a family, and the cornerstone of a stable society. In Islam, marriage holds immense value, as it is considered half of one’s faith, encouraging companionship, mutual support, and societal harmony. However, with rising inflation and financial challenges, many families today struggle to fulfill this fundamental social obligation.',
     description2Bold:"",
 
@@ -946,7 +915,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
   {
     id:'',
     title:'A Day of Joy: Mass Wedding for 50 Couples in Badin',
-    image: marriage2,
+    image: '',
     description:'Just last week, in the heart of Badin, 50 deserving couples were united in marriage during a simple yet joyful mass wedding ceremony. The event brought together not only the couples and their families but also community members who came to celebrate this beautiful occasion. Among the guests was Member of the Provincial Assembly, Ms. Sumbul Ayamin Shah, who appreciated the collective effort in making these weddings possible.',
     description2:'The couples were provided with essential household items, including bedding, kitchenware, and other necessities to help them begin their new lives with dignity and ease. Witnessing the joy and relief on the faces of the newlyweds and their parents was a heartwarming reminder of the profound impact that collective kindness can have.',
     description3:`Since 2019, efforts like these have supported many families struggling to manage wedding expenses. These initiatives stem from a belief in the power of community and the importance of preserving the sanctity of marriage, especially for those facing financial hardships.`,
@@ -956,7 +925,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
   {
     id:'',
     title:'Community Support: A Collective Responsibility',
-    image: marriage3,
+    image: '',
     description:'Marriage is not just a family event; it is a societal milestone that binds communities together. Islam encourages the community to support those who are less fortunate in this regard. Prophet Muhammad (PBUH) said:',
     description2:'The most blessed marriage is the one with the least expenses." (Mishkat al-Masabih 3097)',
     description3:'This hadith serves as a reminder that simplicity, sincerity, and community solidarity matter more than the grandeur of any event. When communities come together to help struggling families, they become part of a greater purpose—one that reflects the true spirit of compassion and unity.',
@@ -994,7 +963,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
     date: 'June 15, 2018',
     title:'Why Education is the Key to Breaking the Cycle of Poverty',
     category:'Education',
-    image: h_2,
+    image:'',
     description:'',
     description2:'',
     bottomText:'',
@@ -1004,7 +973,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
         id:'',
         title:'A Child’s Dream Beyond the Classroom',
         // subtitle:'The Power of Education: Transforming Lives One Child at a Time',
-        image: education1,
+        image: '',
         descriptionBold:'',
         description:'In a small village, a little girl named Amina watches other children walk to school, her heart full of longing. Poverty has kept her from classrooms and books, tying her future to the same struggles her family has faced for generations. Yet, within her, a dream persists—because education is more than learning; it is a lifeline to opportunity. Amina represents millions of children whose dreams are paused, waiting for someone to press play.',
 
@@ -1017,7 +986,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
         id:'',
         title:'The Harsh Reality: When Poverty Steals Potential',
         // subtitle:'The Power of Education: Transforming Lives One Child at a Time',
-        image: education2,
+        image: '',
         descriptionBold:'',
         description:'Amina’s story echoes across Pakistan, where over 22.8 million children are out of school, the second-highest number globally. Poverty, cultural barriers, and a lack of schools rob children of their right to education. Without learning, they grow into adults without choices—locked into low-paying jobs and hardship, continuing the cycle of poverty. The cost of missed education is generational, as children without schooling are more likely to raise families trapped in poverty.',
 
@@ -1029,7 +998,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
       {
         id:'',
         title:'The Islamic Perspective: Education as a Duty and a Legacy of Hope',
-        // image: h_2,
+        image: '',
         description:'Amina’s story is one of longing and resilience—a child whose dreams are put on hold by the chains of poverty. But in the teachings of Islam, we are reminded that knowledge is the greatest key to breaking those chains. The first word revealed in the Quran was “Iqra” (Read), a divine command highlighting the importance of learning. Prophet Muhammad (ﷺ) said, “Seeking knowledge is an obligation upon every Muslim” (Sunan Ibn Majah). Education is more than books and lessons—it is a means to empower the soul, uplift communities, and create change that lasts beyond a lifetime.',
         descriptionBold:'',
         description2:'',
@@ -1043,7 +1012,7 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
        {
         id:'',
         title:'A Continuous Charity That Never Ends',
-        // image: h_2,
+        image: '',
         description:`In Islam, the power of knowledge extends beyond the individual. It becomes an act of Sadaqah Jariyah (continuous charity)—one that multiplies in reward long after we are gone. The Prophet Muhammad (ﷺ) said, “When a man dies, his deeds come to an end except for three things: Sadaqah Jariyah, knowledge from which benefit is gained, or a righteous child who prays for him” (Sahih Muslim). Supporting a child's education is not just a donation—it is a seed that grows into a legacy, bearing fruit for generations. `,
         descriptionBold:'',
         description2:'',

@@ -1,12 +1,9 @@
-import mediaCoverImage1 from '../assets/img/media_coverage/relief_operations_for_flood.webp'
-import mediaCoverImage2 from '../assets/img/media_coverage/yousuf_cricketer.webp'
-import mediaCoverImage3 from '../assets/img/media_coverage/breast_cancer.webp'
-import mediaHeaderImage from '../assets/img/media_coverage/hero_media_coverage.webp'
+
 
 export const MEDIA_COVERAGE_PAGE_DATA = {
   id: 'media-coverage',
   title: 'Media Coverage',
-  headerImage: mediaHeaderImage
+  headerImage: ''
 }
 
 export const MEDIA_COVERAGE_DATA = [
@@ -14,7 +11,7 @@ export const MEDIA_COVERAGE_DATA = [
     id: 'breast-cancer-awareness-session',
     title: 'مولانا طارق جمیل  فاؤنڈیشن کے زیرِ اہتمام چھاتی کے سرطان (بریسٹ کینسر) سے متعلق آگاہی سیشن کا انعقاد کیا گیا',
     subtitle: '',
-    image: mediaCoverImage3,
+    image: '',
     readFullNewsText: '',
     donateButtonText: '',
     donationUrl: '',
@@ -45,7 +42,7 @@ export const MEDIA_COVERAGE_DATA = [
     id: 'mtj-flood-relief-operations',
     title: 'MTJ Foundation Expands Rescue and Relief Operations for Flood Victims Nationwide',
     subtitle: 'September 21, 2025',
-    image: mediaCoverImage1,
+    image: '',
     readFullNewsText: 'Read full news:',
     donateButtonText: ['Pakistan Observer'],
     donationUrl: [
@@ -75,7 +72,7 @@ MTJ Foundation`
     id: 'mohammad-yousaf-visit-mtjf',
     title: 'سابق ٹیسٹ کرکٹر محمد یوسف کادورہ مولانا طارق جمیل فاؤنڈیشن ،بطوررضاکاررجسٹر ',
     subtitle: 'February 22, 2026',
-    image: mediaCoverImage2,
+    image: '',
     readFullNewsText: 'Read full news:',
     donateButtonText: ['Nawaiwaqt'],
     donationUrl: [

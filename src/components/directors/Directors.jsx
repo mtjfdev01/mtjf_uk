@@ -2,7 +2,6 @@ import React from 'react'
 import '../../common/styles/base.css'
 import '../../common/styles/common.css'
 import './Directors.css'
-import directorImage from '../../assets/img/directors/molana.webp'
 
 const defaultTexts = [
   'Our foundation was established to promote the teachings of Islam, foster interfaith harmony, and serve humanity through various initiatives such as education scholarships, healthcare, food, clean water, housing, and a marriage gift for girls.',
@@ -11,7 +10,7 @@ const defaultTexts = [
 ]
 
 const Directors = ({
-  imageUrl = directorImage,
+  imageUrl = '',
   mobileImageUrl,
   directorName = 'Molana Tariq Jamil',
   directorRole = "Chairman",

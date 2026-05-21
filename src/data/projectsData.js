@@ -1,39 +1,9 @@
 import image1 from '../assets/img/projects/camp.webp'
-import ZakatCalculator from '../assets/img/zakat/zakat_hero.webp'
-import ZakatResponsibilityImage from '../assets/img/zakat/Your zakat your responsibility.webp'
 
-import ZakatWhyMattersImage from '../assets/img/zakat/Why your zakat matters.webp'
-import ZakatHowHelpsImage from '../assets/img/zakat/How your zakat helps people.webp'
-import GiveWithTrustThisRamadan from '../assets/img/zakat/Give with trust this Ramadan.webp'
-import ZakatFarz from '../assets/img/zakat/Who is zakat farz upon.webp'
-import ZakatBottomBanner from '../assets/img/zakat/zakat_bottom_banner.webp'
-import ZakatBottomBannerMobile from '../assets/img/zakat/zakat_bottom_banner_mobile.webp'
 
-import impactNum1 from '../assets/img/impact_numbers/MTJF Impact Numbers 300x260 -01.webp'
-import impactNum2 from '../assets/img/impact_numbers/MTJF Impact Numbers 300x260 -02.webp'
-import impactNum3 from '../assets/img/impact_numbers/MTJF Impact Numbers 300x260 -03.webp'
-import impactNum4 from '../assets/img/impact_numbers/MTJF Impact Numbers 300x260 -04.webp'
-import impactNum5 from '../assets/img/impact_numbers/MTJF Impact Numbers 300x260 -05.webp'
-import impactNum6 from '../assets/img/impact_numbers/MTJF Impact Numbers 300x260 -06.webp'
-import impactNum7 from '../assets/img/impact_numbers/MTJF Impact Numbers 300x260 -07.webp'
-import impactNum8 from '../assets/img/impact_numbers/MTJF Impact Numbers 300x260 -08.webp'
-import impactNum9 from '../assets/img/impact_numbers/MTJF Impact Numbers 300x260 -09.webp'
-import zakatSlider1 from '../assets/img/ramazan_zakat_slider/carosel (1).webp'
-import zakatSlider2 from '../assets/img/ramazan_zakat_slider/carosel (2).webp'
-import zakatSlider3 from '../assets/img/ramazan_zakat_slider/carosel (3).webp'
-import zakatSlider4 from '../assets/img/ramazan_zakat_slider/carosel (4).webp'
-import zakatSlider5 from '../assets/img/ramazan_zakat_slider/carosel (5).webp'
-import zakatSlider6 from '../assets/img/ramazan_zakat_slider/carosel (6).webp'
-import zakatSlider7 from '../assets/img/ramazan_zakat_slider/carosel (7).webp'
-import zakatSlider8 from '../assets/img/ramazan_zakat_slider/carosel (8).webp'
-import zakatSlider9 from '../assets/img/ramazan_zakat_slider/carosel (9).webp'
-import zakatSlider10 from '../assets/img/ramazan_zakat_slider/carosel (10).webp'
-import zakatSlider11 from '../assets/img/ramazan_zakat_slider/carosel (11).webp'
-import zakatSlider12 from '../assets/img/ramazan_zakat_slider/carosel (12).webp'
-import ZakatMob from '../assets/img/zakat/ramzan_zakat_mob_popup.webp'
 import healthhero from '../assets/img/projects/projects-details/Health/health_hero.webp'
 import edufooter from '../assets/img/projects/projects-details/education/education_footer.webp'
-import cleanwater from '../assets/img/projects/projects-details/cleanwater/hero-section.webp'
+// import cleanwater from '../assets/img/projects/projects-details/cleanwater/hero-section.webp'
 import kasb from '../assets/img/projects/projects-details/kasb/hero-section.webp'
 import image2 from '../assets/img/projects/convocation.webp'
 import healthfooter from '../assets/img/projects/projects-details/Health/health_footer.webp'
@@ -71,22 +41,11 @@ import supportbuildsfutures from '../assets/img/projects/projects-details/educat
 import impactglance from '../assets/img/projects/projects-details/education/education_transform.webp'
 
 import CleanWater from '../assets/img/projects/water.webp'
-import individualhandpump from '../assets/img/projects/projects-details/cleanwater/individual.webp'
-import communityhandpump from '../assets/img/projects/projects-details/cleanwater/community.webp'
-import waterfiltrationplant from '../assets/img/projects/projects-details/cleanwater/filter.webp'
 
-import ApnaGhar from '../assets/img/projects/project-image/apnaghar.webp'
-import apna_ghar from '../assets/img/projects/projects-details/Apna Ghar/hero.webp'
-import apna_ghar_media from '../assets/img/projects/projects-details/Apna Ghar/media.webp'
-import apna_ghar_hero_mob from '../assets/img/projects/projects-details/Apna Ghar/hero_mob.webp'
 
-import apna_ghar_matters from '../assets/img/projects/projects-details/Apna Ghar/matter.webp'
-import apna_ghar_mission from '../assets/img/projects/projects-details/Apna Ghar/detail.webp'
-import apna_ghar_building from '../assets/img/projects/projects-details/Apna Ghar/apna_ghar.webp'
-import apna_ghar_eligibility from '../assets/img/projects/projects-details/Apna Ghar/criteria.webp'
-import apna_ghar_goal from '../assets/img/projects/projects-details/Apna Ghar/sdgs.webp'
-import apna_ghar_impact from '../assets/img/projects/projects-details/Apna Ghar/impact.webp'
-import apna_ghar_story from '../assets/img/projects/projects-details/Apna Ghar/story.webp'
+
+
+
 
 
 import DisasterRelief from '../assets/img/projects/disaster.webp'
@@ -833,7 +792,7 @@ export const PROJECTS_DETAIL_DATA = {
   'clean-water': {
     id: 'clean-water',
     title: 'Clean Water for Every Family, A Lifeline of sadqah Jariyah',
-    headerImage: cleanwater,
+    headerImage: '',
     stats: [
       { icon: FaTint, number: '850', label: 'Water Wells Installed' },
       { icon: FaFaucet, number: '1,200', label: 'Water Filtration Plants' },
@@ -861,7 +820,7 @@ export const PROJECTS_DETAIL_DATA = {
       {
         id: 'individual-handpumps',
         title: 'Individual Handpumps',
-        image: individualhandpump,
+        image: '',
         description: 'A handpump is not just a source of water: it is a lifeline for a family. Installed within homes or nearby, our individual handpumps provide immediate access to clean drinking water, dramatically improving health and quality of life. Mothers no longer walk for hours each day, children can drink safely, and families are protected from deadly waterborne diseases. For donors, every handpump becomes a continuous act of charity (sadqah Jariyah), benefiting generations.',
         benefits: [
           'Protects families from waterborne diseases such as cholera and hepatitis',
@@ -874,7 +833,7 @@ export const PROJECTS_DETAIL_DATA = {
       {
         id: 'community-handpumps',
         title: 'Community Handpumps',
-        image: communityhandpump,
+        image: '',
         description: 'In villages and neighborhoods where water scarcity affects multiple households, MTJ Foundation installs community handpumps. These shared water points ensure equitable access for all, strengthen social bonds, and promote hygiene and public health. Supporting a community handpump is a long-term, impactful charity, serving numerous families for years and generating continuous spiritual reward for donors.',
         benefits: [
           'Serves multiple households efficiently',
@@ -887,7 +846,7 @@ export const PROJECTS_DETAIL_DATA = {
       {
         id: 'water-filtration-plants',
         title: 'Water Filtration Plants',
-        image: waterfiltrationplant,
+        image: '',
         description: 'Large-scale filtration plants provide safe, chemical-free drinking water to rural and peri-urban communities daily. These plants fight life-threatening illnesses such as cholera and hepatitis and reach hundreds or thousands of families at once. Donating to a water filtration plant is one of the most significant acts of sadqah Jariyah, as it creates a lasting, life-saving impact for entire communities.',
         benefits: [
           'Ensures consistent, safe drinking water for large populations',
@@ -1216,8 +1175,8 @@ export const PROJECTS_DETAIL_DATA = {
   'apna-ghar': {
     id: 'apna-ghar',
     title: 'Apna Ghar – A Safe, Dignified, and Empowering Community for Widows & Orphans',
-    headerImage: apna_ghar,
-    headerImageMob: apna_ghar_hero_mob,
+    headerImage: '',
+    headerImageMob: '',
     stats: [
       { icon: FaHome, number: '1,850', label: 'Houses Built' },
       { icon: FaUsers, number: '9,250', label: 'People Housed' },
@@ -1247,7 +1206,7 @@ export const PROJECTS_DETAIL_DATA = {
         subtitle: 'A Purpose-Built Community Where Widows and Orphans Can Rebuild Their Lives',
         description: 'Apna Ghar is MTJF\'s flagship initiative focused on uplifting widowed, abandoned, and divorced women along with their orphan children. The project offers permanent housing, skills, faith-based guidance, education support, and community belonging, all within a protected, sustainable environment. Phase I is under development in Tulamba Town, where MTJF is building 70 eco-friendly, solar-powered homes equipped with clean water access and community infrastructure that supports both mothers and their children. Apna Ghar is not just a housing scheme; it is a foundation for a stable childhood and a dignified motherhood.',
         donateButtonText: 'Build a Home for a Widow & Her Children',
-        image: apna_ghar_media
+        image: ''
       },
       {
         id: 'why-apna-ghar-matters',
@@ -1263,7 +1222,7 @@ export const PROJECTS_DETAIL_DATA = {
         ],
         afterServicesText: 'Apna Ghar offers a holistic solution rooted in compassion, sustainability, and Islamic values , ensuring that no widow or orphan is left behind.',
         donateButtonText: 'Help Provide Safety and Stability',
-        image: apna_ghar_matters
+        image: ''
       },
       {
         id: 'our-mission',
@@ -1279,7 +1238,7 @@ export const PROJECTS_DETAIL_DATA = {
         ],
         afterServicesText: "Every family receives the foundation they need for stability, growth, and independence.",
         donateButtonText: 'Build a Home for a Widow & Her Children',
-        image: apna_ghar_mission
+        image: ''
       },
       {
         id: 'what-were-building',
@@ -1299,7 +1258,7 @@ export const PROJECTS_DETAIL_DATA = {
         ],
         afterServicesText: 'Every component is designed to restore stability, nurture growth, and empower families.',
         donateButtonText: 'Contribute to Building a Home',
-        image: apna_ghar_building
+        image: ''
       },
       {
         id: 'eligibility-criteria',
@@ -1315,7 +1274,7 @@ export const PROJECTS_DETAIL_DATA = {
           'Committed to participating in skill development and micro-enterprise'
         ],
         donateButtonText: 'Build a Home for a Widow & Her Children',
-        image: apna_ghar_eligibility
+        image: ''
       },
       {
         id: 'impact-we-aim-to-create',
@@ -1330,7 +1289,7 @@ export const PROJECTS_DETAIL_DATA = {
           'Build a sustainable, replicable, faith-driven model community'
         ],
         donateButtonText: 'Be Part of This Change',
-        image: apna_ghar_impact
+        image: ''
       },
       {
         id: 'aligned-with-global-goals',
@@ -1348,7 +1307,7 @@ export const PROJECTS_DETAIL_DATA = {
           'Quality Education'
         ],
         donateButtonText: 'Build a Home for a Widow & Her Children',
-        image: apna_ghar_goal
+        image: ''
       },
       {
         id: 'stories-of-strength',
@@ -1356,7 +1315,7 @@ export const PROJECTS_DETAIL_DATA = {
         subtitle: 'Because Every Widow Deserves Support — Every Orphan Deserves a Future',
         description: 'Apna Ghar will share firsthand stories from mothers and children whose lives have been transformed through stable housing, education, safety, and emotional support. Real journeys. Real resilience. Real transformation.',
         donateButtonText: 'Watch Their Stories',
-        image: apna_ghar_story
+        image: ''
       }
     ],
     faqs: {
@@ -1401,7 +1360,7 @@ export const PROJECTS_DETAIL_DATA = {
     id: 'aas-lab-diagnostics',
     title: 'Objective: Basic Healthcare for the Underprivileged',
     headerImage: healthhero,
-    headerImageMob: apna_ghar_hero_mob,
+    headerImageMob: '',
     stats: [
       { icon: FaHome, number: '1,850', label: 'Houses Built' },
       { icon: FaUsers, number: '9,250', label: 'People Housed' },
@@ -1518,7 +1477,7 @@ team will provide you with individualised attention and assistance.`,
     id: 'seeds-of-change',
     title: 'Make Pakistan Green Again',
     headerImage: SeedsOfChange,
-    headerImageMob: apna_ghar_hero_mob,
+    headerImageMob: '',
     stats: [
       { icon: FaHome, number: '1,850', label: 'Houses Built' },
       { icon: FaUsers, number: '9,250', label: 'People Housed' },
@@ -1707,8 +1666,8 @@ team will provide you with individualised attention and assistance.`,
   'ramzan-zakat': {
     id: 'ramzan-zakat',
     title: 'Your Zakat: Your Responsibility',
-    headerImage: ZakatCalculator,
-    headerImageMob: ZakatMob,
+    headerImage: '',
+    headerImageMob: '',
     // url:'/zakat-calculator',
     stats: [
       { icon: FaHandHoldingHeart, number: '50,000+', label: 'Families Supported' },
@@ -1756,7 +1715,7 @@ Allah gives us this month so we pause and ask ourselves a simple question:
         ],
         donateButtonText: 'Give Your Zakat This Ramadan',
         // donationUrl: '/zakat-calculator',
-        image: ZakatResponsibilityImage
+        image: ''
       },
       {
         id: 'why-your-zakat-matters',
@@ -1773,20 +1732,8 @@ And it becomes a source of relief for someone who has been waiting for help, oft
         },
         donateButtonText: 'Fulfill Your Zakat Obligation',
         donationUrl: '/zakat-calculator',
-        image: ZakatWhyMattersImage,
+        image: '',
         carosellImages: [
-          zakatSlider1,
-          zakatSlider2,
-          zakatSlider3,
-          zakatSlider4,
-          zakatSlider5,
-          zakatSlider6,
-          zakatSlider7,
-          zakatSlider8,
-          zakatSlider9,
-          zakatSlider10,
-          zakatSlider11,
-          zakatSlider12,
         ],
         carosellItemWidth: 300,
         carosellMobWidth: 170,
@@ -1804,9 +1751,9 @@ And when you give it sincerely, Allah promises something greater in return.`,
         },
         donateButtonText: 'Pay Zakat',
         donationUrl: '/zakat-calculator',
-        image: ZakatFarz,
-        bottom_banner_img: ZakatBottomBanner,
-        bottom_banner_mobile_img: ZakatBottomBannerMobile
+        image: '',
+        bottom_banner_img: '',
+        bottom_banner_mobile_img: ''
       },
       {
         id: 'how-your-zakat-helps-people',
@@ -1819,7 +1766,7 @@ This is not a one-time impact.
 This is relief that reaches hearts, homes, and futures.`,
         donateButtonText: 'Make Your Zakat Count',
         donationUrl: '/zakat-calculator',
-        image: ZakatHowHelpsImage,
+        image: '',
         impact: '',
         services: [
 
@@ -1827,17 +1774,7 @@ This is relief that reaches hearts, homes, and futures.`,
           'It helps a family survive Ramadan without fear of hunger.',
           'It helps someone stand on their own feet instead of living in dependence.'
         ],
-        carosellImages: [
-          impactNum1,
-          impactNum2,
-          impactNum3,
-          impactNum4,
-          impactNum5,
-          impactNum6,
-          impactNum7,
-          impactNum9,
-          impactNum8,
-        ],
+        carosellImages: [],
       },
       {
         id: 'message-from-molana-tariq-jamil',
@@ -1853,7 +1790,7 @@ This is relief that reaches hearts, homes, and futures.`,
         bottomText: `When you give Zakat sincerely, Allah replaces it with barakah in ways you cannot imagine. This Ramadan, answer that call.`,
         donateButtonText: 'Give Zakat for the Sake of Allah',
         donationUrl: '/zakat-calculator',
-        image: ZakatCalculator,
+        image: '',
         video: 'https://www.youtube.com/watch?v=RaDA7oiNqLs',
 
         carosellVideos: [
@@ -1876,7 +1813,7 @@ It is about fulfilling a trust.
 This Ramadan, Let Your Zakat Speak for You`,
         donateButtonText: 'Give Your Zakat Now',
         donationUrl: '/zakat-calculator',
-        image: GiveWithTrustThisRamadan,
+        image: '',
         testimonials: {
           id: 'health-program-impact',
           title: 'Support Our Cause',
@@ -4203,7 +4140,7 @@ For many families living in poverty, conflict zones, and disaster affected regio
     subtitle: 'Providing Safe Water for Healthier Communities',
     description: 'We install hand pumps, filtration systems, and community water solutions where families struggle for safe drinking water.',
     impactStatement: 'Clean water reduces disease, restores dignity, and protects generations.',
-    image: CleanWater,
+    image: '',
     donateButtonText: 'Sponsor a Water Project',
     learnMorePath: '',
     donatePath: ''
@@ -4214,7 +4151,7 @@ For many families living in poverty, conflict zones, and disaster affected regio
     subtitle: 'Safe Shelter for Orphans and Widows',
     description: 'Apna Ghar provides a nurturing home, education, emotional care, and long-term stability and independence for widows and orphaned children.',
     impactStatement: 'Here, safety becomes healing, and broken lives begin again.',
-    image: ApnaGhar,
+    image: "",
     donateButtonText: 'Support Apna Ghar',
     learnMorePath: '',
     donatePath: ''

@@ -3,7 +3,6 @@ import { FaWhatsapp, FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'r
 import { FaXTwitter } from 'react-icons/fa6'
 import './Footer.css'
 import logoImg from '../../assets/img/logos/footer_logo.png'
-import googlePlayImg from '../../assets/img/app-stores/play_store.webp'
 // import appStoreImg from '../../assets/img/app-stores/app-store.png'
 
 const Footer = () => {
@@ -47,7 +46,6 @@ const Footer = () => {
                 </div>
                 <div className="footer-app-stores">
                   <a>
-                    {/* <img src={googlePlayImg} alt="Get it on Google Play" /> */}
                   </a>
                 </div>
               </div>
