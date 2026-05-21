@@ -24,28 +24,27 @@ const Footer = () => {
                 </div>
                 {/* <h4 className="footer-heading h4">Follow Us</h4> */}
                 <div className="footer-social-icons">
-                  <a href="#" aria-label="WhatsApp">
+                  <button type="button" className="footer-social-icon-btn" aria-label="WhatsApp">
                     <FaWhatsapp />
-                  </a>
-                  <a href="#" aria-label="Facebook">
+                  </button>
+                  <button type="button" className="footer-social-icon-btn" aria-label="Facebook">
                     <FaFacebookF />
-                  </a>
-                  <a href="#" aria-label="X (Twitter)">
+                  </button>
+                  <button type="button" className="footer-social-icon-btn" aria-label="X (Twitter)">
                     <FaXTwitter />
-                  </a>
-                  <a href="#" aria-label="Instagram">
+                  </button>
+                  <button type="button" className="footer-social-icon-btn" aria-label="Instagram">
                     <FaInstagram />
-                  </a>
-                  <a href="#" aria-label="LinkedIn">
+                  </button>
+                  <button type="button" className="footer-social-icon-btn" aria-label="LinkedIn">
                     <FaLinkedinIn />
-                  </a>
-                  <a href="#" aria-label="YouTube">
+                  </button>
+                  <button type="button" className="footer-social-icon-btn" aria-label="YouTube">
                     <FaYoutube />
-                  </a>
+                  </button>
                 </div>
                 <div className="footer-app-stores">
-                  <a href="#" aria-label="App store">
-                  </a>
+                  <button type="button" className="footer-social-icon-btn" aria-label="App store" />
                 </div>
               </div>
 
