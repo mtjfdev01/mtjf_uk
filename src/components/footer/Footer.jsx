@@ -1,0 +1,183 @@
+import { Link } from 'react-router-dom'
+import { FaWhatsapp, FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
+import './Footer.css'
+import logoImg from '../../assets/img/logos/footer_logo.png'
+import googlePlayImg from '../../assets/img/app-stores/play_store.webp'
+// import appStoreImg from '../../assets/img/app-stores/app-store.png'
+
+const Footer = () => {
+  return (
+    <>
+    {/* <Newsletter />
+    <DonationCta /> */}
+    <footer className="footer">
+      <div className="footer-container container">
+        <div className="footer-grid grid grid-12 gap-24">
+
+          {/* Combined Section - Locations, Quick Links, and Blogs */}
+          <div className="footer-column footer-combined-section col-12 md-12 lg-12">
+             {/* Second Row - Quick Links and Blogs */}
+           <div className="footer-row footer-links-row grid gap-24">
+              {/* First Column - Logo and Registration Details */}
+              <div className="footer-column footer-social-media">
+              <div className="footer-logo-wrapper flex flex-col items-start gap-12">
+                  <img src={logoImg} alt="MTJ Foundation Logo" className="footer-logo" />
+                </div>
+                {/* <h4 className="footer-heading h4">Follow Us</h4> */}
+                <div className="footer-social-icons">
+                  <a>
+                    <FaWhatsapp />
+                  </a>
+                  <a>
+                    <FaFacebookF />
+                  </a>
+                  <a>
+                    <FaXTwitter />
+                  </a>
+                  <a>
+                    <FaInstagram />
+                  </a>
+                  <a>
+                    <FaLinkedinIn />
+                  </a>
+                  <a>
+                    <FaYoutube />
+                  </a>
+                </div>
+                <div className="footer-app-stores">
+                  <a>
+                    {/* <img src={googlePlayImg} alt="Get it on Google Play" /> */}
+                  </a>
+                </div>
+              </div>
+
+              {/* Third Column - Social Media */} 
+              <div className="footer-column footer-legal-info">
+                <ul className="footer-list flex flex-col gap-12">
+                  <li>
+                    <span className='footer-label'>National Taxation Number:</span>{' '}
+                    <span className="footer-link">6703846-7</span>
+                  </li>
+                  <li>
+                    <span className='footer-label'>Registration Number:</span>{' '}
+                    <span className="footer-link">4156</span>
+                    <br />
+                    <span className="footer-link">PB-7207081426668106</span>
+                  </li>
+                  <li>
+                    <span className='footer-label'>MTJ Foundation Pakistan is a tax-exempt organization under Section 2(36)(c) of the FBR Act.</span>
+                  </li>
+                </ul>
+                 {/* <div className="footer-location-city">Tulamba (Head Office)</div> */}
+                  <div className="footer-location-address">
+                    4th Floor, Silverstream House, 45 Fitzroy Street, Fitzrovia, London, United Kingdom, W1T 6EB
+                  </div>
+              </div>
+
+
+              {/* Rightmost Column - Blogs */}
+              {/* <div className="footer-column footer-blogs">
+              
+              </div> */}
+              {/* Third Column - Quick Links */}
+              {/* <div className="footer-column footer-quick-links">
+                <h4 className="footer-heading h4">Quick Links</h4>
+                <ul className="footer-list flex flex-col gap-12">
+                <li>
+                    <Link to="/home" className="footer-link">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/about" className="footer-link">About Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/projects" className="footer-link">Our Programs</Link>
+                  </li>
+                  <li>
+                    <Link to="/volunteerRegistration" className="footer-link">Volunteer</Link>
+                  </li>
+                  <li>
+                    <Link to="/careers" className="footer-link">Careers</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact" className="footer-link">Contact Us</Link>
+                  </li>
+                </ul>
+              </div> */}
+
+            </div>
+            {/* Second  */}
+            {/* <div className="footer-row footer-locations-row">
+              <Link to="/contact" className="footer-link">
+                <h4 className="footer-heading h4">Regional Offices</h4>
+              </Link>
+              <ul className="footer-list flex flex-col gap-12">
+                <li className="footer-location-item">
+                  <div className="footer-location-city">Tulamba (Head Office)</div>
+                  <div className="footer-location-address">
+                    Makhdoom Pur Road, Tulamba, District Khanewal
+                  </div>
+                  <div className="footer-location-contacts">
+                    <a href="tel:061111786853" className="footer-link">061-111-786-853</a>
+                    <a href="tel:03032440000" className="footer-link">0303-2440000</a>
+                    <a href="mailto:info@mtjfoundation.org" className="footer-link">info@mtjfoundation.org</a>
+                    <a href="tel:03036660221" className="footer-link">Feedback: 0303-6660221</a>
+                  </div>
+                </li>
+                <li className="footer-location-item">
+                <div className="footer-location-city">Karachi</div>
+                  <div className="footer-location-address">
+                    Office No. 1, 190-1/A, Khayyam Chambers Nursery Market, Block 2, P.E.C.H.S, Main Shahrah-e-Faisal, Karachi
+                  </div>
+                  <div className="footer-location-contacts">
+                    <a href="tel:021111786853" className="footer-link">021-111-786-853</a>
+                    <a href="tel:03002001575" className="footer-link">0300-2001575</a>
+                  </div>
+                </li>
+                
+                <li className="footer-location-item">
+                  <div className="footer-location-city">Multan</div>
+                  <div className="footer-location-address">
+                    House #89, Block C, Model Town Phase-2, Multan
+                  </div>
+                  <div className="footer-location-contacts">
+                    <a href="tel:061111786853" className="footer-link">061-111-786-853</a>
+                    <a href="tel:03032440000" className="footer-link">0303-2440000</a>
+                  </div>
+                </li>
+                
+                <li className="footer-location-item">
+                  <div className="footer-location-city">Faisalabad</div>
+                  <div className="footer-location-address">
+                    Jamia Al Hasnain, Green Town, Faisalabad
+                  </div>
+                  <div className="footer-location-contacts">
+                    <a href="tel:041111786853" className="footer-link">041-111-786-853</a>
+                    <a href="tel:03004463903" className="footer-link">0300-4463903</a>
+                  </div>  
+                </li>
+                
+                <li className="footer-location-item">
+                  <div className="footer-location-city">Lahore</div>
+                  <div className="footer-location-address">
+                    Office #59-B, Faisal Town, Opposite Moon Market, Lahore
+                  </div>
+                  <div className="footer-location-contacts">
+                    <a href="tel:042111786853" className="footer-link">042-111-786-853</a>
+                    <a href="tel:03004425557" className="footer-link">0300-4425557</a>
+                  </div>
+                </li>
+              </ul>
+            </div> */}
+          </div>
+        </div>
+        </div>
+        <div className="footer-copyright">
+          <span className='footer-label'>© Copyright 2026 MTJ Foundation</span>
+        </div>
+      </footer>
+    </>
+  );
+};
+
+export default Footer;

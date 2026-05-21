@@ -1,0 +1,349 @@
+/* InitiativeDonationCard.css */
+
+.initiative-donation-card {
+  background-color: var(--color-white, #ffffff);
+  border: 1px solid #cfe6c2; /* Light green border */
+  border-radius: var(--radius-md, 10px);
+  padding: var(--space-24, 24px) var(--space-20, 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-16, 16px);
+  box-shadow: var(--shadow-sm, 0 1px 2px rgba(0,0,0,0.06));
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* .initiative-card-icon {
+  margin-bottom: var(--space-8, 8px);
+} */
+
+.initiative-card-icon img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+}
+
+.initiative-card-title {
+  font-size: var(--fs-18, 18px);
+  font-weight: 700;
+  color: var(--color-900, #222);
+  margin: 0;
+}
+
+.initiative-pricing-options {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-10, 10px);
+}
+
+.initiative-pricing-option {
+  border: 1px solid var(--color-200, #e6e6e6);
+  border-radius: var(--radius-md, 8px);
+  background-color: var(--color-white, #ffffff);
+  padding: var(--space-12, 12px) var(--space-10, 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6, 6px);
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition, all 0.2s ease);
+}
+
+.initiative-pricing-option:hover {
+  border-color: var(--color-primary, #30aee3);
+  box-shadow: var(--shadow-sm, 0 1px 2px rgba(0,0,0,0.06));
+}
+
+.initiative-pricing-option.active {
+  border-color: var(--color-primary, #30aee3);
+  background-color: var(--color-100, #f5f5f5);
+}
+
+.initiative-pricing-option-title {
+  font-size: var(--fs-16, 16px);
+  font-weight: 600;
+  color: var(--color-900, #222);
+}
+
+.initiative-pricing-option-amount {
+  font-size: var(--fs-14, 14px);
+  color: var(--color-700, #444);
+  line-height: 1.4;
+}
+
+.initiative-quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8, 8px);
+  margin-top: var(--space-8, 8px);
+  width: 100%;
+  justify-content: center;
+  max-width: 200px;
+}
+
+.initiative-quantity-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--color-300, #e1e1e1);
+  color: var(--color-white, #ffffff);
+  font-size: var(--fs-20, 20px);
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition, all 0.2s ease);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.initiative-quantity-btn--minus {
+  background-color: var(--color-primary, #30aee3); /* Blue for minus */
+}
+
+.initiative-quantity-btn--plus {
+  background-color: var(--color-base-green, #4caf50); /* Green for plus */
+}
+
+.initiative-quantity-btn:hover:not(:disabled) {
+  opacity: 0.9;
+  box-shadow: var(--shadow-sm);
+}
+
+.initiative-quantity-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.initiative-quantity-input {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid var(--color-300, #e1e1e1);
+  border-radius: var(--radius-md, 8px);
+  font-size: var(--fs-16, 16px);
+  color: var(--color-900, #222);
+  appearance: textfield; /* Hide arrows in modern browsers */
+  -moz-appearance: textfield; /* Hide arrows in Firefox */
+}
+
+/* Hide arrows in Chrome, Safari, Edge */
+.initiative-quantity-input::-webkit-outer-spin-button,
+.initiative-quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.initiative-donation-type-field,
+.initiative-price-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8, 8px);
+  margin-top: var(--space-12, 12px);
+  text-align: left;
+}
+
+.initiative-field-label {
+  font-size: var(--fs-14, 14px);
+  font-weight: 600;
+  color: var(--color-900, #222);
+  display: flex;
+  align-items: center;
+  gap: var(--space-8, 8px);
+  flex-wrap: wrap;
+}
+
+.initiative-read-more {
+  font-size: var(--fs-12, 12px);
+  font-weight: 400;
+  color: var(--color-primary, #30aee3);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: var(--transition, all 0.2s ease);
+}
+
+.initiative-read-more:hover {
+  color: var(--color-primary-hover, #2896c2);
+}
+
+.initiative-donation-type-select,
+.initiative-price-input {
+  width: 100%;
+  padding: var(--space-12, 12px) var(--space-16, 16px);
+  border: 1px solid var(--color-300, #e1e1e1);
+  border-radius: var(--radius-md, 8px);
+  background-color: var(--color-white, #ffffff);
+  font-size: var(--fs-16, 16px);
+  color: var(--color-900, #222);
+  box-sizing: border-box;
+  height: 44px;
+}
+
+.initiative-price-input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-300, #e1e1e1);
+  border-radius: var(--radius-md, 8px);
+  overflow: hidden;
+  background-color: var(--color-white, #ffffff);
+}
+
+.initiative-price-input-wrapper .initiative-price-input {
+  border: none;
+  flex: 1;
+  padding-right: 0;
+}
+
+.initiative-price-currency {
+  background-color: var(--color-900, #404040);
+  color: var(--color-white, #ffffff);
+  padding: var(--space-12, 12px) var(--space-16, 16px);
+  font-size: var(--fs-14, 14px);
+  height: 44px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.initiative-add-other-amount-btn {
+  width: 100%;
+  padding: var(--space-12, 12px) var(--space-16, 16px);
+  background-color: var(--color-primary, #30aee3); /* Blue button */
+  color: var(--color-white, #ffffff);
+  border: none;
+  border-radius: var(--radius-md, 8px);
+  font-size: var(--fs-14, 14px);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition, all 0.2s ease);
+  margin-top: var(--space-16, 16px);
+}
+
+.initiative-add-other-amount-btn:hover {
+  background-color: var(--color-primary-hover, #2896c2);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Overlay styles */
+.initiative-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: var(--radius-md, 10px);
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.initiative-overlay-content {
+  background-color: var(--color-white, #ffffff);
+  border-radius: var(--radius-md, 10px);
+  padding: var(--space-24, 24px);
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: var(--shadow-lg, 0 16px 40px rgba(0,0,0,0.18));
+  transform: scale(0.9);
+  animation: slideUp 0.3s ease forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: scale(1);
+  }
+}
+
+.initiative-overlay-close {
+  position: absolute;
+  top: var(--space-12, 12px);
+  right: var(--space-12, 12px);
+  background: none;
+  border: none;
+  font-size: var(--fs-20, 20px);
+  color: var(--color-600, #575757);
+  cursor: pointer;
+  padding: var(--space-8, 8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm, 6px);
+  transition: var(--transition, all 0.2s ease);
+  width: 32px;
+  height: 32px;
+}
+
+.initiative-overlay-close:hover {
+  background-color: var(--color-100, #f2f2f2);
+  color: var(--color-900, #1a1a1a);
+}
+
+.initiative-overlay-duration {
+  font-size: var(--fs-14, 14px);
+  color: var(--color-600, #575757);
+  margin-bottom: var(--space-16, 16px);
+  padding-bottom: var(--space-12, 12px);
+  border-bottom: 1px solid var(--color-200, #e6e6e6);
+}
+
+.initiative-overlay-duration strong {
+  color: var(--color-900, #222);
+  font-weight: 600;
+}
+
+.initiative-overlay-description {
+  font-size: var(--fs-16, 16px);
+  line-height: 1.6;
+  color: var(--color-900, #222);
+  margin: 0;
+  padding-right: var(--space-32, 32px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .initiative-donation-card {
+    padding: var(--space-16, 16px);
+  }
+  
+  /* .initiative-card-icon img {
+    width: 70px;
+    height: 50px;
+  } */
+  
+  .initiative-card-title {
+    font-size: var(--fs-16, 16px);
+  }
+
+  .initiative-pricing-options {
+    grid-template-columns: 1fr;
+  }
+
+  .initiative-overlay-content {
+    padding: var(--space-20, 20px);
+    width: 95%;
+  }
+
+  .initiative-overlay-description {
+    font-size: var(--fs-14, 14px);
+    padding-right: var(--space-24, 24px);
+  }
+}
+

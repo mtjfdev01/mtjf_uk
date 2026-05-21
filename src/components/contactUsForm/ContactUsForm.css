@@ -1,0 +1,47 @@
+/* ============================================================
+   ContactUsForm — scoped overrides
+   Only targets .contact-us-form — DonationForm.css untouched
+   ============================================================ */
+
+/* Desktop: all fields in a responsive auto-fit grid */
+.contact-us-form .donation-form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-16);
+  align-items: start;
+}
+
+/* Reset any inherited grid-column / grid-row from donation form classes */
+.contact-us-form .donation-form-row .donation-form-group {
+  grid-column: unset !important;
+  grid-row: unset !important;
+}
+
+/* ── Mobile: every field full-width, stacked ── */
+@media (max-width: 767px) {
+  .contact-us-form .donation-form-row {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-12) !important;
+  }
+
+  .contact-us-form .donation-form-row .donation-form-group {
+    grid-column: 1 / -1 !important;
+    grid-row: unset !important;
+  }
+
+  .contact-us-form .donation-form-row.mt-24 {
+    margin-top: var(--space-12) !important;
+    gap: var(--space-12) !important;
+  }
+
+  /* Remove the negative margin hack from donation form */
+  .contact-us-form .donation-form-row.mt-24 .donation-form-group:last-child {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-us-form .donation-form-row {
+    grid-template-columns: 1fr !important;
+  }
+}
