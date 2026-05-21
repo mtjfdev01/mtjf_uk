@@ -101,6 +101,34 @@ const AnimatedCounter = ({ targetValue, suffix = '' }) => {
   const counterRef = useRef(null)
 
   useEffect(() => {
+    const element = counterRef.current
+    if (!element) return
+
+    let timer
+
+    const animateCounter = () => {
+      const duration = 2000 // 2 seconds
+      const steps = 60
+      const increment = targetValue / steps
+      const stepDuration = duration / steps
+
+      let currentStep = 0
+
+      timer = setInterval(() => {
+        currentStep++
+        const newValue = Math.min(
+          Math.floor(increment * currentStep),
+          targetValue
+        )
+        setCount(newValue)
+
+        if (currentStep >= steps || newValue >= targetValue) {
+          setCount(targetValue)
+          clearInterval(timer)
+        }
+      }, stepDuration)
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -113,39 +141,13 @@ const AnimatedCounter = ({ targetValue, suffix = '' }) => {
       { threshold: 0.5 }
     )
 
-    if (counterRef.current) {
-      observer.observe(counterRef.current)
-    }
+    observer.observe(element)
 
     return () => {
-      if (counterRef.current) {
-        observer.unobserve(counterRef.current)
-      }
+      if (timer) clearInterval(timer)
+      observer.unobserve(element)
     }
-  }, [hasAnimated])
-
-  const animateCounter = () => {
-    const duration = 2000 // 2 seconds
-    const steps = 60
-    const increment = targetValue / steps
-    const stepDuration = duration / steps
-
-    let currentStep = 0
-
-    const timer = setInterval(() => {
-      currentStep++
-      const newValue = Math.min(
-        Math.floor(increment * currentStep),
-        targetValue
-      )
-      setCount(newValue)
-
-      if (currentStep >= steps || newValue >= targetValue) {
-        setCount(targetValue)
-        clearInterval(timer)
-      }
-    }, stepDuration)
-  }
+  }, [hasAnimated, targetValue])
 
   const formatNumber = (num) => {
     return num.toLocaleString()

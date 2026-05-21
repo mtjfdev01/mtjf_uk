@@ -1,6 +1,5 @@
-import React, { Suspense, lazy } from "react";
+import React, { lazy } from "react";
 import Hero from "../components/hero/Hero";
-import { ALL_PROJECTS_DATA } from "../data/projectsData";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 import BrandArea from "../components/brands/brands";
 import HomeInfoSection from "../components/homeInfoSection/HomeInfoSection";
@@ -35,14 +34,7 @@ const Footer = lazy(() => import("../components/footer/Footer"));
 
 const Home = ({ showHomeInfoSection = false }) => {
   // Simple progressive loading - components load when they're about to enter viewport
-  const [heroContentRef, showHeroContent] = useIntersectionObserver({ 
-    rootMargin: '50px',
-    loadImmediately: true // Load immediately
-  });
-  const [donationFormRef, showDonationForm] = useIntersectionObserver({ 
-    rootMargin: '100px'
-  });
-  const [restRef, showRest] = useIntersectionObserver({ 
+  const [restRef] = useIntersectionObserver({ 
     rootMargin: '200px'
   });
 

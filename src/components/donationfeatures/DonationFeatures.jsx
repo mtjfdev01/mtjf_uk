@@ -10,8 +10,6 @@ import KASB from '../../assets/img/projects/icons/MTJF_Logos/kasb.svg'
 import Seeds from '../../assets/img/projects/icons/MTJF_Logos/seeds.svg'
 import Community from '../../assets/img/projects/icons/MTJF_Logos/community.svg'
 import AASLab from '../../assets/img/projects/icons/MTJF_Logos/aaslab.svg'
-import { Link } from 'react-router-dom'
-
 const ICON_PROPS = {
   width: 60,
   height: 60,

@@ -3,6 +3,10 @@
   "outputDirectory": "build",
   "installCommand": "npm install",
   "framework": null,
+  "env": {
+    "CI": "false",
+    "DISABLE_ESLINT_PLUGIN": "true"
+  },
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]

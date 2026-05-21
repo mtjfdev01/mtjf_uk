@@ -102,7 +102,7 @@ const BrandArea = ({ className = '', speed = 70, brands, title = 'Commitment to 
     <section
       className={`brands-section ${className}`}
       // drive the CSS var that the animation uses
-      style={{ ['--duration']: `${durationSec}s`, ...(itemWidth ? { ['--item-width']: `${itemWidth}px` } : {}), ...(mobWidth ? { ['--item-mob-width']: `${mobWidth}px` } : {}) }}
+      style={{ '--duration': `${durationSec}s`, ...(itemWidth ? { '--item-width': `${itemWidth}px` } : {}), ...(mobWidth ? { '--item-mob-width': `${mobWidth}px` } : {}) }}
     >
       <div className="brands-container">
         {title && (

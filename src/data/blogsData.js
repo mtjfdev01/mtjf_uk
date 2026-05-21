@@ -1,13 +1,4 @@
 // blogsData.js - Unified blog data for all components
-import h_3 from '../assets/img/projects/projects-details/Health/health_free_opd.webp'
-import h_4 from '../assets/img/projects/projects-details/Health/health_free_medicines.webp'
-import h_5 from '../assets/img/projects/projects-details/Health/health_free_medical_camps.webp'
-import h_6 from '../assets/img/projects/projects-details/Health/surgeries.webp'
-import h_7 from '../assets/img/projects/projects-details/Health/Health_health_program.webp'
-import h_8 from '../assets/img/projects/projects-details/Health/health_dircet_aid.webp'
-import h_9 from '../assets/img/projects/projects-details/Health/support.webp'
-import h_10 from '../assets/img/projects/projects-details/Health/surgeries.webp'
-
 
 export const blogs = [
     {
@@ -795,7 +786,6 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
     image: '',
     excerpt: '',
     content: 'content',
-    subProjects: 'subProjects',
     link: '/blogs/clean-water',
     badge: null,
     featured: false,
@@ -884,7 +874,6 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
   image: '',
   excerpt: '',
   content: 'content',
-  subProjects: 'subProjects',
   link: '/blogs/marriage-in-need',
   subProjects:[
     {
@@ -1003,7 +992,6 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
         descriptionBold:'',
         description2:'',
         description2Bold:'',
-        description2:'',
         description3Bold:'',
         description3:``,
         bottomText:'',
@@ -1017,7 +1005,6 @@ bottomText:`Donate your Qurbani through MTJ Foundation and be the reason someone
         descriptionBold:'',
         description2:'',
         description2Bold:'',
-        description2:'',
         description3Bold:'',
         description3:``,
         bottomText:'',

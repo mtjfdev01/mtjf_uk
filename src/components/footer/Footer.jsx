@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { FaWhatsapp, FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import './Footer.css'
@@ -25,27 +24,27 @@ const Footer = () => {
                 </div>
                 {/* <h4 className="footer-heading h4">Follow Us</h4> */}
                 <div className="footer-social-icons">
-                  <a>
+                  <a href="#" aria-label="WhatsApp">
                     <FaWhatsapp />
                   </a>
-                  <a>
+                  <a href="#" aria-label="Facebook">
                     <FaFacebookF />
                   </a>
-                  <a>
+                  <a href="#" aria-label="X (Twitter)">
                     <FaXTwitter />
                   </a>
-                  <a>
+                  <a href="#" aria-label="Instagram">
                     <FaInstagram />
                   </a>
-                  <a>
+                  <a href="#" aria-label="LinkedIn">
                     <FaLinkedinIn />
                   </a>
-                  <a>
+                  <a href="#" aria-label="YouTube">
                     <FaYoutube />
                   </a>
                 </div>
                 <div className="footer-app-stores">
-                  <a>
+                  <a href="#" aria-label="App store">
                   </a>
                 </div>
               </div>

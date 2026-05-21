@@ -4,17 +4,12 @@ import './index.css'
 import { FaLinkedinIn } from "react-icons/fa";
 
 const StickyBar = () => {
-  const [showPhoneNumber, setShowPhoneNumber] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
 
   // Handle window resize and initial mobile detection
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768)
-      // Reset phone number visibility when switching from mobile to desktop
-      if (window.innerWidth > 768) {
-        setShowPhoneNumber(false)
-      }
     }
 
     // Check on mount
@@ -25,35 +20,17 @@ const StickyBar = () => {
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
-  const handlePhoneClick = (event) => {
-    // On mobile: toggle to show phone number
-    if (isMobile && !showPhoneNumber) {
-      event.preventDefault()
-      setShowPhoneNumber(true)
-    }
-    // If phone number is already visible, let the default tel: link behavior proceed (call)
-  }
-
-  const handleEmailClick = (event) => {
-    // On mobile: if phone is showing, toggle back to email
-    if (isMobile && showPhoneNumber) {
-      event.preventDefault()
-      setShowPhoneNumber(false)
-    }
-    // Otherwise, let the default email link behavior proceed
-  }
-
   return (
     <div className="sticky_bar_container">
       <div className={`sticky_bar-content ${!isMobile ? 'container' : ''}`}>
-        <div className={`sticky_bar-contact ${showPhoneNumber ? 'show-phone' : ''}`}>
-          <a>
+        <div className="sticky_bar-contact">
+          <a href="mailto:info@mtjfoundation.org" aria-label="Email">
             <FaEnvelope />
           </a>
           <a
-            // href="tel:061-111-786-853"
+            href="tel:061111786853"
             className="sticky_bar-link sticky_bar-phone-link"
-
+            aria-label="Phone"
           >
             <FaPhone />
             <span className="sticky_bar-phone-number">
@@ -64,23 +41,22 @@ const StickyBar = () => {
 
 
         <div className="sticky_bar-social">
-          <a >
+          <a href="#" aria-label="Instagram">
             <FaInstagram />
           </a>
-          <a>
+          <a href="#" aria-label="Facebook">
             <FaFacebookF />
           </a>
-          <a>
+          <a href="#" aria-label="YouTube">
             <FaYoutube />
           </a>
-          <a>
+          <a href="#" aria-label="LinkedIn">
             <FaLinkedinIn />
           </a>
           
         </div>
         <div className="sticky_bar-international">
-          <a
-          >
+          <a href="#" aria-label="Donate globally">
              Donate Globally
           </a>
         </div> 

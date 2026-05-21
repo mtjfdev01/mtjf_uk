@@ -4,7 +4,6 @@ import { CartProvider } from './contexts/CartContext';
 import { DonationProvider } from './contexts/DonationContext';
 import Navbar from './components/navbar';
 import './App.css';
-import StickyBar from "./components/stickybar";
 
 
 

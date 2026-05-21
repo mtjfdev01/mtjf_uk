@@ -54,17 +54,13 @@ const LazyImage = ({
 
     // Small delay before starting observation to prevent immediate loading on refresh
     const timeoutId = setTimeout(() => {
-      if (imgRef.current) {
-        observer.observe(imgRef.current)
-      }
+      observer.observe(img)
     }, 100)
 
     return () => {
       clearTimeout(timeoutId)
       window.removeEventListener('scroll', handleScroll)
-      if (imgRef.current) {
-        observer.unobserve(imgRef.current)
-      }
+      observer.unobserve(img)
       observer.disconnect()
     }
   }, [rootMargin])

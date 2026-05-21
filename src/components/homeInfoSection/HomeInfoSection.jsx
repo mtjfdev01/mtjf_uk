@@ -1,5 +1,4 @@
 import React from 'react';
-import LatestNewsCard from './LatestNewsCard';
 import EventsCard from './EventsCard';
 import SocialStreamCard from './SocialStreamCard';
 import './HomeInfoSection.css';

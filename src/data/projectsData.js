@@ -18,7 +18,6 @@ import h_9 from '../assets/img/projects/projects-details/Health/support.webp'
 import h_10 from '../assets/img/projects/projects-details/Health/surgeries.webp'
 
 import fitrana_hero from '../assets/img/projects/projects-details/fitrana/fitrana.webp'
-import fitrana_hero_mob from '../assets/img/projects/projects-details/fitrana/fitrana.webp'
 import fitrana_matters from '../assets/img/projects/projects-details/fitrana/fitrana_sub_project.jpg'
 import fitrana_pricing from '../assets/img/projects/projects-details/fitrana/fitrana_pricing.webp'
 import fitrana_affect from '../assets/img/projects/projects-details/fitrana/fitrana_affect.webp'
@@ -26,7 +25,6 @@ import fitranaIntro from '../assets/img/projects/projects-details/fitrana/import
 import importance from '../assets/img/projects/projects-details/fitrana/matter.jpg'
 import fitrana_payers from '../assets/img/projects/projects-details/fitrana/fitrana_payers.JPG'
 import education from '../assets/img/projects/education_hero.webp'
-import ramzanRation from '../assets/img/projects/rastion packs.webp'
 
 import image3 from '../assets/img/projects/group of boys.webp'
 import Health from '../assets/img/projects/health.webp'
@@ -39,8 +37,6 @@ import educationprogram from '../assets/img/projects/projects-details/education/
 import quarterlyeducation from '../assets/img/projects/projects-details/education/education_report.webp'
 import supportbuildsfutures from '../assets/img/projects/projects-details/education/education_support.webp'
 import impactglance from '../assets/img/projects/projects-details/education/education_transform.webp'
-
-import CleanWater from '../assets/img/projects/water.webp'
 
 
 
@@ -94,15 +90,11 @@ import qurbani15 from '../assets/img/projects/projects-details/qurbani_2026/qurb
 import qurbani16 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (16).JPG'
 import qurbani17 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (17).JPG'
 import qurbani18 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (18).JPG'
-import qurbani19 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (19).JPG'
 import qurbani20 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (20).JPG'
 import qurbani21 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (21).JPG'
-import qurbani22 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (22).JPG'
 import qurbani23 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (23).JPG'
 import qurbani24 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (24).JPG'
-import qurbani25 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (25).JPG'
 import qurbani26 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (26).JPG'
-import qurbani27 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (27).JPG'
 import qurbani28 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (28).JPG'
 import qurbani29 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (29).JPG'
 import qurbani30 from '../assets/img/projects/projects-details/qurbani_2026/qurbani_pics/carosel (30).JPG'
@@ -2365,7 +2357,7 @@ endured the unimaginable.`,
     ],
     faqs: {
       id: 'frequently-asked-questions',
-      title: 'Fitrana FAQs\s',
+      title: 'Fitrana FAQs',
       // subtitle: 'Everything You Need to Know About Fitrana',
       description: '',
       faqs: [
