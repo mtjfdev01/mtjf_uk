@@ -53,6 +53,11 @@
   margin-bottom: var(--space-8);
 }
 
+.stat-counter {
+  display: inline-block;
+  min-width: 1ch;
+}
+
 .stat-description {
   color: var(--text-muted);
   line-height: 1.5;

@@ -9,7 +9,7 @@ import DreamSchool from '../../assets/img/projects/icons2/Dream School.webp';
 import MarriageGift from '../../assets/img/projects/icons2/Marrigae Gift.webp';
 const STATS_DATA = [
   {
-    id: 'floods',
+    id: 'disaster-relief',
     icon: (
         // <img src={logo_one} alt="flood icon" /> 
         <img src={Education} alt="Disaster Relief Icon" />
@@ -37,7 +37,7 @@ const STATS_DATA = [
     iconColor: '#e02228'
   },
   {
-    id: 'water',
+    id: 'handpumps',
     icon: (
      <img src={Water} alt="water icon" />
     ),
@@ -55,7 +55,7 @@ const STATS_DATA = [
     iconColor: '#e02228'
   },
   {
-    id: 'floods',
+    id: 'homes-built',
     icon: (
         // <img src={logo_one} alt="flood icon" /> 
         <img src={Education} alt="Education Icon" />
@@ -84,7 +84,7 @@ const STATS_DATA = [
     iconColor: '#f6b319'
   },
   {
-    id: 'water',
+    id: 'water-filtration',
     icon: (
      <img src={Water} alt="Water Filteration Plants Icon" />
     ),
@@ -97,21 +97,26 @@ const STATS_DATA = [
 // Counter component for animated numbers
 const AnimatedCounter = ({ targetValue, suffix = '' }) => {
   const [count, setCount] = useState(0)
-  const [hasAnimated, setHasAnimated] = useState(false)
+  const hasAnimatedRef = useRef(false)
   const counterRef = useRef(null)
 
   useEffect(() => {
     const element = counterRef.current
     if (!element) return
 
+    hasAnimatedRef.current = false
+    setCount(0)
+
     let timer
 
     const animateCounter = () => {
-      const duration = 2000 // 2 seconds
+      if (hasAnimatedRef.current || targetValue <= 0) return
+      hasAnimatedRef.current = true
+
+      const duration = 2000
       const steps = 60
       const increment = targetValue / steps
       const stepDuration = duration / steps
-
       let currentStep = 0
 
       timer = setInterval(() => {
@@ -132,29 +137,29 @@ const AnimatedCounter = ({ targetValue, suffix = '' }) => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && !hasAnimated) {
-            setHasAnimated(true)
+          if (entry.isIntersecting) {
             animateCounter()
+            observer.disconnect()
           }
         })
       },
-      { threshold: 0.5 }
+      { threshold: 0.15, rootMargin: '0px 0px -5% 0px' }
     )
 
     observer.observe(element)
 
     return () => {
       if (timer) clearInterval(timer)
-      observer.unobserve(element)
+      observer.disconnect()
     }
-  }, [hasAnimated, targetValue])
+  }, [targetValue])
 
   const formatNumber = (num) => {
     return num.toLocaleString()
   }
 
   return (
-    <span ref={counterRef}>
+    <span ref={counterRef} className="stat-counter">
       {formatNumber(count)}{suffix}
     </span>
   )
