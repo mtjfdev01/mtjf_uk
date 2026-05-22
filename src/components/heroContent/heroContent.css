@@ -65,11 +65,20 @@
         padding: var(--space-12);
     }
 
-    .right_img{
-        display: none;
+    .right_img {
+        display: flex;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        padding: 0;
+        justify-content: center;
     }
 
-
+    .right_img img {
+        width: 100vw;
+        max-width: 100vw;
+        height: auto;
+        object-fit: cover;
+    }
 }
 
 @media (min-width: 992px) {
