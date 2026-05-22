@@ -51,7 +51,7 @@ const Footer = () => {
               {/* Third Column - Social Media */} 
               <div className="footer-column footer-legal-info">
                 <ul className="footer-list flex flex-col gap-12">
-                  <li>
+                  {/* <li>
                     <span className='footer-label'>National Taxation Number:</span>{' '}
                     <span className="footer-link">6703846-7</span>
                   </li>
@@ -60,7 +60,7 @@ const Footer = () => {
                     <span className="footer-link">4156</span>
                     <br />
                     <span className="footer-link">PB-7207081426668106</span>
-                  </li>
+                  </li> */}
                   <li>
                     <span className='footer-label'>MTJ Foundation Pakistan is a tax-exempt organization under Section 2(36)(c) of the FBR Act.</span>
                   </li>
