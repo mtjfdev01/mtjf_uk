@@ -40,9 +40,10 @@ const Home = ({ showHomeInfoSection = false }) => {
 
   return (
     <>
-          <Hero />    
+          <Hero />   
+          <div id="programs-section"> 
             <HeroContent />
-            
+            </div>
       {/* Rest of components - Load when near viewport */}
       <div ref={restRef} style={{ minHeight: '200px' }}>
               <DonationFeatures />
@@ -55,22 +56,21 @@ const Home = ({ showHomeInfoSection = false }) => {
                               directorName="Molana Yousaf Jamil"
                               directorRole="Vice Chairman's Message"
                               directorTexts={[
-                                "Molana Yousaf Jamil continues the legacy of service with a relentless focus on community uplift. He oversees programs that bring educational and spiritual guidance to families across Pakistan.",
                                 "As Vice Chairman, he champions initiatives that strengthen social welfare, ensuring transparency and compassion remain at the heart of every MTJ Foundation project.",
                                 "His vision inspires our teams to lead with humility, fostering a culture rooted in faith, integrity, and inclusive progress.",
                               ]}
                             />
-              <div id="programs-section">
+              {/* <div id="programs-section">
                   <Projects />
-              </div>
+              </div> */}
               {/* <ImpactNumbers /> */}
-              <Stats />
+              {/* <Stats /> */}
               <BrandArea />
-              <ProjectsTestimonial
+              {/* <ProjectsTestimonial
                 videos={home_testimonials.videos}
                 title={home_testimonials.title}
                 subtitle={home_testimonials?.subtitle}
-              />
+              /> */}
               {showHomeInfoSection && <HomeInfoSection />}
                 <div id="contact-section">
                    <DonationForm />

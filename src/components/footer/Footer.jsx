@@ -61,11 +61,11 @@ const Footer = () => {
                     <br />
                     <span className="footer-link">PB-7207081426668106</span>
                   </li> */}
-                  <li>
+                  {/* <li>
                     <span className='footer-label'>MTJ Foundation Pakistan is a tax-exempt organization under Section 2(36)(c) of the FBR Act.</span>
-                  </li>
+                  </li> */}
                 </ul>
-                 {/* <div className="footer-location-city">Tulamba (Head Office)</div> */}
+                 <div className="footer-location-city"> Office Address</div>
                   <div className="footer-location-address">
                     4th Floor, Silverstream House, 45 Fitzroy Street, Fitzrovia, London, United Kingdom, W1T 6EB
                   </div>

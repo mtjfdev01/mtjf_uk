@@ -5,12 +5,22 @@ import change_hero_qurbani from '../../assets/img/hero/change_hero_qurbani.webp'
 import hero_qurbani_mobile from '../../assets/img/hero/hero_qurbani_mobile.webp'
 import change_hero_health from '../../assets/img/hero/change_hero_health.webp'
 import hero_health_mobile from '../../assets/img/hero/hero_health_mobile.webp'
+import change_hero from '../../assets/img/hero/change_hero.webp'
+import change_mob from '../../assets/img/hero/change_mob.webp'
+import winter from '../../assets/img/hero/winter.webp'
+import winter_mob from '../../assets/img/hero/winter_mob.webp'
+import MTJF_Sadaqa_web from '../../assets/img/hero/MTJF_Sadaqa_web.webp'
+import MTJF_Sadaqa_Mob from '../../assets/img/hero/MTJF Sadaqa Mob.webp'
 import './hero.css'
 
 const HERO_IMAGES = [
-  { desktop: change_hero_qurbani, mobile: hero_qurbani_mobile },
+  // { desktop: change_hero_qurbani, mobile: hero_qurbani_mobile },
   { desktop: change_hero_health, mobile: hero_health_mobile },
-]
+  { desktop: change_hero, mobile: change_mob }, // Add the default hero image
+  // { desktop: winter, mobile: winter_mob }
+  { desktop: MTJF_Sadaqa_web, mobile: MTJF_Sadaqa_Mob }
+]     
+
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
