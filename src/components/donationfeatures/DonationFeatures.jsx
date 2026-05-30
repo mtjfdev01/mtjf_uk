@@ -21,15 +21,15 @@ const ICON_PROPS = {
 }
 
 const FEATURE_ITEMS = [
-  {
-    id: 'apna-ghar',
-    title: 'APNA GHAR',
-    description:
-      'Offering vulnerable widows and children a safe, nurturing home to call their own.',
-    icon: (
-    <img src={ApnaGhar} alt="Apna Ghar - A safe home for orphans and widows program icon"  {...ICON_PROPS}/>
-    )
-  },
+  // {
+  //   id: 'apna-ghar',
+  //   title: 'APNA GHAR',
+  //   description:
+  //     'Offering vulnerable widows and children a safe, nurturing home to call their own.',
+  //   icon: (
+  //   <img src={ApnaGhar} alt="Apna Ghar - A safe home for orphans and widows program icon"  {...ICON_PROPS}/>
+  //   )
+  // },
   {
     id: 'health',
     title: 'HEALTH',
@@ -90,22 +90,22 @@ const FEATURE_ITEMS = [
       <img src={Seeds} alt="Seeds of Change - Environmental conservation and tree planting program icon"  {...ICON_PROPS}/>
     )
   },
-  {
-    id: 'qurbani-baraye-mustehqeen',
-    title: 'Qurbani Baraye Mustehqeen',
-    description: 'Sharing the blessings of Qurbani and Eid with families who rarely enjoy fresh meat.',
-    icon: (
-     <img src={Qurbani} alt="Qurbani Baraye Mustehqeen - Qurbani meat distribution program icon" {...ICON_PROPS}/>
-)
-  },
-  {
-    id: 'aas-lab-diagnostics',
-    title: 'AAS LAB',
-    description: 'Delivering affordable, reliable diagnostic services to ensure timely medical treatment.',
-    icon: (
-    <img src={AASLab} alt="AAS Lab - Affordable diagnostic and medical testing services program icon"  {...ICON_PROPS}/>
-   )
-  }
+//   {
+//     id: 'qurbani-baraye-mustehqeen',
+//     title: 'Qurbani Baraye Mustehqeen',
+//     description: 'Sharing the blessings of Qurbani and Eid with families who rarely enjoy fresh meat.',
+//     icon: (
+//      <img src={Qurbani} alt="Qurbani Baraye Mustehqeen - Qurbani meat distribution program icon" {...ICON_PROPS}/>
+// )
+//   },
+  // {
+  //   id: 'aas-lab-diagnostics',
+  //   title: 'AAS LAB',
+  //   description: 'Delivering affordable, reliable diagnostic services to ensure timely medical treatment.',
+  //   icon: (
+  //   <img src={AASLab} alt="AAS Lab - Affordable diagnostic and medical testing services program icon"  {...ICON_PROPS}/>
+  //  )
+  // }
 ]
 
 const ITEMS_PER_SLIDE = 4

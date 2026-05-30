@@ -50,7 +50,7 @@ const Home = ({ showHomeInfoSection = false }) => {
               <div id="about-section">
                <Mission />
                 </div>
-                 <Directors
+                 {/* <Directors
                               imageUrl={viceChairmanImage}
                               mobileImageUrl={viceChairmanImageMobile}
                               directorName="Molana Yousaf Jamil"
@@ -59,7 +59,7 @@ const Home = ({ showHomeInfoSection = false }) => {
                                 "As Vice Chairman, he champions initiatives that strengthen social welfare, ensuring transparency and compassion remain at the heart of every MTJ Foundation project.",
                                 "His vision inspires our teams to lead with humility, fostering a culture rooted in faith, integrity, and inclusive progress.",
                               ]}
-                            />
+                            /> */}
               {/* <div id="programs-section">
                   <Projects />
               </div> */}

@@ -12,14 +12,14 @@ const HeroContent = () => {
          <h2 className='heading-secondary text-white'>A Legacy of Compassion</h2>
          <h1 className='text-white main_page_heading mt-0'>
           A Future of Hope, <br/>
-          Molana Tariq Jamil <br/>
+          MTJ <br/>
            Foundation
          </h1>
         </div>
         
         <div className='section-center text-white'>
          <p className='px-16 text-white'>
-        For decades, Molana Tariq Jamil has stood as a voice of compassion, kindness, and unity. His vision, to ease suffering and uplift vulnerable families, led to the creation of the MTJ Foundation. Today, his mission lives on through our work: providing healthcare, education, clean water, and life-changing support to communities in need. Every contribution from donors like you helps turn this vision into reality and brings hope to thousands of lives.
+        For decades, the MTJ Foundation has stood as a voice of compassion, kindness, and unity. Its vision, to ease suffering and uplift vulnerable families, led to the creation of the MTJ Foundation. Today, this mission lives on through our work: providing healthcare, education, clean water, and life-changing support to communities in need. Every contribution from donors like you helps turn this vision into reality and brings hope to thousands of lives.
         </p>
         </div>
          {/* <div className='right_img'>
